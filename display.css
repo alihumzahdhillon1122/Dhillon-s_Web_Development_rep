@@ -1,0 +1,42 @@
+.container{
+    /* background-color: #333; */
+    display: inline-block;
+    /* width: 100vw;
+    height: 100vh; */
+    
+
+
+
+}
+.box{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    padding: 50px;
+    
+     
+
+
+
+}
+#box1{
+   
+    background-color: magenta;
+    display:inline-block;
+   
+}
+#box2{
+    
+    background-color: green;
+   
+}#box3{
+    
+    background-color: pink;
+    
+}
+#box4{
+    
+    background-color: purple;
+   
+}
