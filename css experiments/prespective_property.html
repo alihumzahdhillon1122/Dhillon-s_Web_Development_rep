@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perspective_property in CSS</title>
+    <style>
+        .frame{
+            width: 500px;
+            height: 500px;
+            border: 3px solid black;
+            /* background-color: #512da8; */
+            perspective: 500px;
+
+
+        }
+
+        .shape{
+            width: 500px;
+            height: 500px;
+            background-color: lightblue;
+            transform: rotatex(45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="frame">
+        <div class="shape"></div>
+    </div>
+</body>
+
+</html>
