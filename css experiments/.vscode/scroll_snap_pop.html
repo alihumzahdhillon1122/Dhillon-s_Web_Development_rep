@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scroll_snap_pop</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 120px;
+            height: 100px;
+            display: flex;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+            /* if we ad  scroll snap behaviour on (x axis mandatory) and we will add scroll snap align in the .container .box*/
+            /* so when we scroll it will automattically center between two cards o boxes */
+
+
+        }
+        .container .box{
+            min-width: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* above three lines just the center the text inside the card */
+            scroll-snap-align: center;
+
+        }
+        .container .box:nth-child(1){
+            background-color: aqua;
+        }
+        .container .box:nth-child(2){
+            background-color: black;
+        }.container .box:nth-child(3){
+            background-color: red;
+        }.container .box:nth-child(4){
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </div>
+</body>
+</html>
