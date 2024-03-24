@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter_css_prop</title>
+    <style>
+        img {
+            filter: blur(4px);
+            
+        }
+        /* img:hover{
+            filter: none;
+            
+        } */
+        img:active{
+            filter: none;
+            
+        }
+        /*  we can use other attributes of filter properies like contrast and etc */
+        input{
+            padding:20px ;
+            border: 1px solid red;
+            caret-color: red;
+        }
+        input:focus{
+            outline: 1px solid red;
+
+
+        }
+
+        input::placeholder{
+            color:green;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <img src="/flower.avif" alt="flower">
+    <input type="text" placeholder="Search...">
+</body>
+
+</html>
