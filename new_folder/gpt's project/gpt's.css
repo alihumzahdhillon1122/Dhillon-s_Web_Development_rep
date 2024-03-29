@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+
+}
+
+.sidebar {
+  width: 600px;
+  background-color: #e9dddd;
+  color: black;
+  padding: 30px;
+  display: flex;
+  order: 0;
+}
+
+.sidebar aside h1 {
+  border: 1px solid ;
+  border-radius: 4px;
+  font-size: 1.9rem;
+  background-image: url(https://img.freepik.com/free-vector/watercolor-feminist-flag_23-2148888747.jpg?size=626&ext=jpg&ga=GA1.1.1212168111.1711132955&semt=ais);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.content {
+  flex-grow: 1;
+  order: 1;
+}
+
+header {
+  width: auto;
+  background-color: #6c9bcf; /* Primary color */
+  background: linear-gradient(to right, #e2e2e2, #6c9bcf);
+  color: #fff;
+  padding: 1.2rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 5rem;
+}
+
+nav ul li:first-child {
+  position: relative;
+  right: 10rem;
+  bottom: 1.2rem;
+}
+
+nav ul li:nth-child(2) {
+  position: relative;
+  right: 4rem;
+  bottom: 1.2rem;
+}
+
+nav ul li:nth-child(3) {
+  position: relative;
+  left: 4rem;
+  bottom: 1.2rem;
+}
+
+nav ul li:nth-child(4) {
+  position: relative;
+  left: 12rem;
+  bottom: 1.2rem;
+}
+
+nav ul li:first-child:hover {
+  background-color: #4caf50; /* Green background color */
+  background: linear-gradient(to right, #e2e2e2, #4caf50);
+  color: #fff; /* White text color */
+  transform: translateY(-3px); /* Move the element up slightly */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s; /* Smooth transition */
+}
+
+nav ul li:first-child:hover a {
+  color: #fff; /* Change link text color on hover */
+}
+
+nav ul li:nth-child(2):hover {
+  background-color: #512da8;
+  background: linear-gradient(to right, #e2e2e2, #512da8);
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+nav ul li:nth-child(2):hover a {
+  color: #fff;
+}
+
+nav ul li:nth-child(3):hover {
+  background-color: #512da9;
+  background: linear-gradient(to right, #e2e2e2, #512da9);
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+nav ul li:nth-child(3):hover a {
+  color: #fff;
+}
+
+nav ul li:nth-child(4):hover {
+  background-color: #512da7;
+  background: linear-gradient(to right, #4caf50, #512da7);
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+nav ul li:nth-child(4):hover a {
+  color: #fff;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.section {
+  padding: 1.2rem;
+} 
