@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My 1st Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+            background-color: #555;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: rgb(143, 234, 234);
+            color: black;
+            padding: 20px;
+        }
+
+
+        .sidebarlist {
+            padding: 40px;
+
+            display: block;
+
+            justify-content: center;
+            color: rgb(243, 148, 6);
+        }
+
+        .sidebarlist li {
+            margin-bottom: 10px;
+            /* Add spacing between list items */
+        }
+
+        .sidebarlist a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: rgb(243, 148, 6);
+            /* Set link color */
+            border-radius: 5px;
+            /* Add rounded corners */
+            transition: background-color 0.3s;
+            /* Smooth transition for background color */
+        }
+
+        .sidebarlist a:hover {
+            background-color: rgba(243, 148, 6, 0.2);
+            /* Light background color on hover */
+        }
+
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        .header {
+            width: auto;
+            height: 85px;
+            background-color: black;
+            border: 1px;
+            color: aqua;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav {
+            height: 50px;
+            background-color: #333;
+            color: white;
+            line-height: 50px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* Center content vertically */
+        }
+
+        .nav ul {
+            list-style: none;
+            /* Remove default list styling */
+            padding: 0;
+            /* Remove default padding */
+        }
+
+        .nav ul li {
+            display: inline-block;
+            /* Display list items horizontally */
+            margin: 0 10px;
+            /* Add spacing between list items */
+        }
+
+        /* Form styling */
+        form {
+            background-image: url(/240607694_4134247753360961_5683625329291096027_n.jpg);
+            background-repeat: no-repeat;
+            background-size: contain;
+
+
+            background-attachment: fixed;
+
+            position: relative;
+
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 70px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 85%;
+            padding: 10px;
+            margin: 0px 0px 10px 0px;
+            /* border: 1px solid #ccc; */
+            border-radius: 4px;
+            box-sizing: content-box;
+        }
+
+        input[type="PASSWORD"] {
+            width: 85%;
+            padding: 10px;
+            margin: 0px 0px 10px 0px;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            width: 85%;
+            padding: 10px;
+            margin: 0px 0px 10px 0px;
+            border-radius: 6px;
+            box-sizing: border-box;
+
+        }
+
+
+        input[type="submit"] {
+            position: relative;
+            /* Position the button absolutely */
+            top: 14px;
+            right: 480px;
+            /* Position the button 20px from the left edge of its containing element */
+            bottom: 20px;
+            /* Position the button 20px from the bottom edge of its containing element */
+            background-color: #555;
+            /* Background color of the button */
+            color: white;
+            /* Text color of the button */
+            padding: 10px 20px;
+            /* Padding around the content of the button (10px top/bottom, 20px left/right) */
+            border: none;
+            /* Remove border around the button */
+            cursor: crosshair;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>CSS Selectors</h1>
+            <p>These are types of CSS selector</p>
+            <ul class="sidebarlist">
+                <li><a href="https://www.w3schools.com/css/css_selectors.asp" target="_blank">simple Selectors</a></li>
+                <li><a href="https://www.w3schools.com/css/css_combinators.asp" target="_blank">CSS Combinator </a>
+                </li>
+                <li><a href="https://www.w3schools.com/css/css_pseudo_classes.asp" target="_blank">pseudo-class
+                        selector</a> </li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div class="header">My 1st Page</div>
+            <div class="nav">
+                <nav>
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Downloads</li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Form -->
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="ENTER YOUR NAME">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="ENTER YOUR EMAIL">
+
+
+                <label for="PASSWORD">PASSWORD:</label>
+                <input type="PASSWORD" id="PASSWORD" name="PASSWORD" required placeholder="ENTER YOUR PASSWORD">
+
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required
+                    placeholder="You can write any text here if necessary"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
