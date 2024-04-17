@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Change Image Position on Mouseover</title>
+<style>
+    /* Style the image */
+    img {
+        position: relative;
+        transition: transform 0.3s ease-in-out; /* Smooth transition */
+    }
+</style>
+</head>
+<body>
+
+<!-- Image to be moved -->
+<img src="kalaam.jpg" alt="Image" onmouseover="moveImage()">
+
+<script>
+    function moveImage() {
+        // Get the image element
+        var imageElement = document.querySelector("img");
+
+        // Change the position of the image
+        imageElement.style.transform = "translateY(20px)"; // Move the image 20 pixels down vertically
+    }
+</script>
+
+</body>
+</html>

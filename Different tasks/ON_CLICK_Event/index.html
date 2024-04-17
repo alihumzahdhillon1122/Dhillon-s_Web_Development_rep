@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Change Text Color on Click</title>
+<script>
+    function changeColor() {
+        // Get the element by its ID
+        var textElement = document.getElementById("text");
+
+        // Change the color of the text
+        textElement.style.color = "#512da8";
+    }
+</script>
+</head>
+<body>
+
+<!-- Text to be clicked -->
+<p id="text" onclick="changeColor()">Click me to change color</p>
+
+</body>
+</html>
