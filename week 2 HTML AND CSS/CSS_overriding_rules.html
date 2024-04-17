@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overriding Rules</title>
+</head>
+
+<body>
+    <h3><b>Here are the rules that determine which styles override others</b></h3>
+
+    <ol>
+        <li><b>Specificity</b><br>
+            <ul>
+                <li>The more specific a selector is, the higher its specificity. Specificity is calculated based on the
+                    combination of element type selectors, class selectors, ID selectors, and inline styles.</li>
+                <li>Inline styles (style attribute) have the highest specificity and will override any other styles
+                    applied to the same element</li>
+                <li>ID selectors have a higher specificity than class selectors, which have a higher specificity than
+                    element type selectors</li>
+            </ul>
+
+        </li>
+        <li>The <b>!important</b> <br></li>
+        <ul>
+            <li>The !important declaration overrides normal declaration rules. If a style property is marked as !important, it will override any other styles applied to the same element, regardless of specificity.</li>
+            <li>However, it's generally best to avoid using !important as it can make CSS harder to maintain and debug</li>
+        </ul>
+        <li><b>Order of Appearance</b><br>
+        <ul>
+            <li>If two conflicting style rules have the same specificity and neither rule is marked as !important, the rule that appears later in the CSS file or in the HTML document will override the earlier one.</li>
+        </ul></li>
+    </ol>
+
+
+    <p><span><code>
+         p {
+        color: blue;  /* Rule 1 */
+    } <br>
+    .highlight {
+        color: red !important;  /* Rule 2 */
+    }
+    </code></span> <br>
+        <b> Importance</b> <br>
+    <ul>
+        <li>The !important declaration overrides normal declaration rules. If a style property is marked as !important,
+            it will override any other styles applied to the same element, regardless of specificity.</li>
+        <li>However, it's generally best to avoid using !important as it can make CSS harder to maintain and debug.</li>
+        <li>Order of Appearance:
+
+            If two conflicting style rules have the same specificity and neither rule is marked as !important, the rule
+            that appears later in the CSS file or in the HTML document will override the earlier one</li>
+    </ul>
+    </p>
+
+    <h2>In Example Mentioned Above</h2>
+    <ul>
+        <li>The paragraph text is initially styled with blue color by Rule 1.</li>
+        <li>The paragraph has a class of highlight, which applies the red color to the text according to Rule 2. The
+            !important declaration gives this rule higher precedence.</li>
+        <li>Additionally, the paragraph has an inline style that sets the color to green. However, the !important
+            declaration in Rule 2 overrides this inline style.</li>
+        <li>Therefore, the text of the paragraph will be red, as specified by Rule 2.</li>
+    </ul>
+</body>
+
+</html>

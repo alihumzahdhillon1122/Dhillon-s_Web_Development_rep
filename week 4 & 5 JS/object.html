@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects in javascript</title>
+
+</head>
+<body>
+    <h1>Object  in Javascript: </h1>
+    <p>In JavaScript, objects are one of the most important data structures used to store collections of related data and functionality. Objects in JavaScript are collections of key-value pairs, where each key is a unique string (or symbol) and each value can be of any data type, including other objects, functions, arrays, or primitive values like strings, numbers, and booleans.</p>
+    <h2>{{-- Creating Object --}}</h2>
+    <code>let person = {
+        name: "John",
+        age: 30,
+        isStudent: false,
+        address: {
+            city: "New York",
+            country: "USA"
+        },
+        sayHello: function() {
+            console.log("Hello, my name is " + this.name);
+        }
+    };
+    </code>
+    <h2>Accessing Object Properties</h2>
+    <p><code>console.log(person.name);         // Output: "John"
+        console.log(person["age"]);       // Output: 30
+        console.log(person.address.city); // Output: "New York"
+        </code></p>
+</body>
+</html>
