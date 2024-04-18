@@ -1,0 +1,46 @@
+/* Style the table */
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    margin: 50px ;
+    text-align: center;
+}
+.table {
+    border: 2px solid black;
+    background: linear-gradient(to right, #e2e2e2 , #512da8);
+    width: fit-content;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+
+}
+.table input{
+    background: linear-gradient(to right, #e2e2e2 , #512da8);
+
+}
+
+/* Style the table rows within the table with class 'table' */
+.table tr {
+    border: 2px solid black;
+}
+
+/* Style the table cells (td) within the table with class 'table' */
+.table td {
+    border: 2px solid black;
+}
+
+/* Style the input field */
+#name {
+    width: 100%;
+    /* Make the input field expand to fill its cell */
+    box-sizing: border-box;
+    /* Include padding and border in width */
+}
+.information_table th{
+    text-align: center;
+    
+}

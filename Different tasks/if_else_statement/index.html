@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if_else_statement</title>
+</head>
+<body>
+    <h1>If Else Statement Example:</h1>
+    <p id="greetings"></p>
+    <script>
+        var currentHour = new Date().getHours();
+        var message;
+        if (currentHour < 12) {
+            message = "good morning"
+        } else {
+            message = "good afternoon"
+
+        }
+        document.getElementById("greetings").innerHTML = message;
+    </script>
+</body>
+</html>
